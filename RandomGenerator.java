@@ -20,13 +20,12 @@ public class RandomGenerator
 		rolls=Bounces;
 		do
 		{
-			num1 = random.nextInt(6)+1;
-			num2 = num2 + num1;
+			num1 = num2 +random.nextInt(6)+1;
 			Bounces--;
 		}
 		while (Bounces>0);
 		
-		num1 = num2/rolls;
+		num1 = num1/rolls;
 		return num1;
 	}
 	
